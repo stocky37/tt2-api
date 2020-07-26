@@ -1,0 +1,78 @@
+{
+  "id": "Cloaking",
+  "skill_tree": "Rogue",
+  "column": 2,
+  "tier": 3,
+  "name": "Cloaking",
+  "note": "Killing bosses has a chance to skip stages.",
+  "max_level": 15,
+  "unlock_stage": 800,
+  "slug": "cloaking",
+  "parent_id": "MultiMonsters",
+  "sp_required": [
+    0,
+    2,
+    2,
+    3,
+    3,
+    3,
+    4,
+    5,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    14
+  ],
+  "bonuses": [
+    {
+      "type": "CloakedSkipChance",
+      "value": [
+        0.0,
+        0.1,
+        0.129,
+        0.157,
+        0.186,
+        0.214,
+        0.243,
+        0.271,
+        0.3,
+        0.329,
+        0.357,
+        0.386,
+        0.414,
+        0.443,
+        0.471,
+        0.5
+      ]
+    },
+    {
+      "type": "CloakedStageDuration",
+      "value": [
+        0.0,
+        0.15,
+        0.168,
+        0.186,
+        0.204,
+        0.221,
+        0.239,
+        0.257,
+        0.275,
+        0.293,
+        0.311,
+        0.329,
+        0.346,
+        0.364,
+        0.382,
+        0.4
+      ]
+    },
+    {
+      "type": "CloakedSkipAmount",
+      "value": 5
+    }
+  ]
+}

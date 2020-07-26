@@ -1,0 +1,81 @@
+{
+  "id": "CritSkillBoost",
+  "skill_tree": "Sorcerer",
+  "column": 1,
+  "tier": 4,
+  "name": "Lightning Strike",
+  "note": "Chance to deal damage equal to percent of monster hp",
+  "max_level": 15,
+  "unlock_stage": 1400,
+  "slug": "lightning-strike",
+  "parent_id": "ManaStealSkillBoost",
+  "sp_required": [
+    0,
+    3,
+    4,
+    5,
+    7,
+    9,
+    12,
+    16,
+    21,
+    27,
+    35,
+    46,
+    60,
+    78,
+    101,
+    131,
+    170
+  ],
+  "bonuses": [
+    {
+      "type": "LightningStrikeDamage",
+      "value": [
+        0.0,
+        0.1,
+        0.1532,
+        0.2072,
+        0.2671,
+        0.3288,
+        0.3942,
+        0.4627,
+        0.5323,
+        0.6003,
+        0.6659,
+        0.7288,
+        0.7867,
+        0.8379,
+        0.8809,
+        0.9147,
+        0.9307
+      ]
+    },
+    {
+      "type": "LightningStrikeEfficiency",
+      "value": [
+        0.0,
+        0.938,
+        0.941,
+        0.944,
+        0.947,
+        0.95,
+        0.953,
+        0.956,
+        0.959,
+        0.962,
+        0.965,
+        0.968,
+        0.971,
+        0.974,
+        0.977,
+        0.98,
+        0.98
+      ]
+    },
+    {
+      "type": "LightningStrikeChance",
+      "value": 0.02
+    }
+  ]
+}

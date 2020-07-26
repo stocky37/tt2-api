@@ -1,0 +1,77 @@
+{
+  "id": "Frenzy",
+  "skill_tree": "Knight",
+  "column": 0,
+  "tier": 4,
+  "name": "Barbaric Fury",
+  "note": "Bonus tap attacks per second / increased tap damage",
+  "max_level": 15,
+  "unlock_stage": 1000,
+  "slug": "barbaric-fury",
+  "parent_id": "HeavyStrikes",
+  "sp_required": [
+    0,
+    3,
+    4,
+    5,
+    7,
+    9,
+    12,
+    16,
+    21,
+    27,
+    35,
+    46,
+    60,
+    78,
+    101,
+    131,
+    170
+  ],
+  "bonuses": [
+    {
+      "type": "ActiveTapDamage",
+      "value": [
+        0.0,
+        2.5,
+        6.19,
+        17.7,
+        66.6,
+        325.0,
+        2280.0,
+        25100.0,
+        463000.0,
+        15300000.0,
+        1040000000.0,
+        180000000000.0,
+        96200000000000.0,
+        2.09e+17,
+        2.63e+21,
+        3.21e+26,
+        7.67e+32
+      ]
+    },
+    {
+      "type": "FrenzyCount",
+      "value": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        8.0,
+        10.0,
+        12.0,
+        15.0,
+        18.0,
+        21.0,
+        24.0,
+        27.0,
+        30.0,
+        30.0
+      ]
+    }
+  ]
+}

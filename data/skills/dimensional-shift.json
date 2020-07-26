@@ -1,0 +1,77 @@
+{
+  "id": "BossTimer",
+  "skill_tree": "Sorcerer",
+  "column": 2,
+  "tier": 4,
+  "name": "Dimensional Shift",
+  "note": "Increase active skill effects and duration",
+  "max_level": 15,
+  "unlock_stage": 1400,
+  "slug": "dimensional-shift",
+  "parent_id": "CloneSkillBoost",
+  "sp_required": [
+    0,
+    3,
+    4,
+    5,
+    7,
+    9,
+    12,
+    16,
+    21,
+    27,
+    35,
+    46,
+    60,
+    78,
+    101,
+    131,
+    170
+  ],
+  "bonuses": [
+    {
+      "type": "ShadowCloneAllSkillBoost",
+      "value": [
+        0.0,
+        1.31,
+        1.7,
+        2.31,
+        3.4,
+        5.4,
+        9.54,
+        19.2,
+        44.9,
+        125.0,
+        426.0,
+        1920.0,
+        12000.0,
+        113000.0,
+        1770000.0,
+        53900000.0,
+        3900000000.0
+      ]
+    },
+    {
+      "type": "ShadowCloneAllSkillDurationRate",
+      "value": [
+        0.0,
+        0.96,
+        0.92,
+        0.88,
+        0.84,
+        0.8,
+        0.76,
+        0.72,
+        0.68,
+        0.64,
+        0.6,
+        0.55,
+        0.5,
+        0.45,
+        0.4,
+        0.35,
+        0.35
+      ]
+    }
+  ]
+}

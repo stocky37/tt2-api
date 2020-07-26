@@ -1,0 +1,81 @@
+{
+  "id": "BossDmgQTE",
+  "skill_tree": "Knight",
+  "column": 2,
+  "tier": 4,
+  "name": "Flash Zip",
+  "note": "Pet Boss damage QTE",
+  "max_level": 15,
+  "unlock_stage": 1000,
+  "slug": "flash-zip",
+  "parent_id": "PetQTE",
+  "sp_required": [
+    0,
+    3,
+    4,
+    5,
+    7,
+    9,
+    12,
+    16,
+    21,
+    27,
+    35,
+    46,
+    60,
+    78,
+    101,
+    131,
+    170
+  ],
+  "bonuses": [
+    {
+      "type": "PetBossQTEDamage",
+      "value": [
+        0.0,
+        2.0,
+        5.07,
+        14.9,
+        58.4,
+        298.0,
+        2220.0,
+        26300.0,
+        529000.0,
+        19400000.0,
+        1480000000.0,
+        295000000000.0,
+        186000000000000.0,
+        4.85e+17,
+        7.48e+21,
+        1.15e+27,
+        3.52e+33
+      ]
+    },
+    {
+      "type": "PetQTECooldownMult",
+      "value": [
+        0.0,
+        0.965,
+        0.93,
+        0.895,
+        0.86,
+        0.825,
+        0.79,
+        0.755,
+        0.72,
+        0.685,
+        0.65,
+        0.615,
+        0.58,
+        0.545,
+        0.51,
+        0.475,
+        0.475
+      ]
+    },
+    {
+      "type": "PetBossQTEDuration",
+      "value": 30
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "HelperDmgQTE",
+  "skill_tree": "Warlord",
+  "column": 0,
+  "tier": 4,
+  "name": "Astral Awakening",
+  "note": "Increased Hero QTE damage per bounce",
+  "max_level": 15,
+  "unlock_stage": 1200,
+  "slug": "astral-awakening",
+  "parent_id": "HelperBoost",
+  "sp_required": [
+    0,
+    3,
+    4,
+    5,
+    7,
+    9,
+    12,
+    16,
+    21,
+    27,
+    35,
+    46,
+    60,
+    78,
+    101,
+    131,
+    170
+  ],
+  "bonuses": [
+    {
+      "type": "HelperQTEDamage",
+      "value": [
+        0.0,
+        1.21,
+        1.45,
+        1.8,
+        2.36,
+        3.25,
+        4.84,
+        7.9,
+        14.3,
+        29.2,
+        69.1,
+        198.0,
+        712.0,
+        3420.0,
+        23400.0,
+        256000.0,
+        5110000.0
+      ]
+    },
+    {
+      "type": "HelperQTECount",
+      "value": 5
+    }
+  ]
+}

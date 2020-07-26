@@ -1,0 +1,59 @@
+{
+  "id": "MultiMonsters",
+  "skill_tree": "Rogue",
+  "column": 2,
+  "tier": 2,
+  "name": "Ambush",
+  "note": "Increased multi spawn chance",
+  "max_level": 10,
+  "unlock_stage": 400,
+  "slug": "ambush",
+  "parent_id": "OfflineGold",
+  "sp_required": [
+    0,
+    1,
+    2,
+    2,
+    3,
+    3,
+    3,
+    4,
+    5,
+    5,
+    6
+  ],
+  "bonuses": [
+    {
+      "type": "MultiMonstersMaxCount",
+      "value": [
+        0.0,
+        1.0,
+        2.0,
+        4.0,
+        6.0,
+        8.0,
+        10.0,
+        12.0,
+        14.0,
+        16.0,
+        20.0
+      ]
+    },
+    {
+      "type": "MultiMonsters",
+      "value": [
+        0.0,
+        0.01,
+        0.016,
+        0.024,
+        0.036,
+        0.052,
+        0.075,
+        0.107,
+        0.151,
+        0.213,
+        0.3
+      ]
+    }
+  ]
+}
