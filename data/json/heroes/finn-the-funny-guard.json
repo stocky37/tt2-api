@@ -1,11 +1,11 @@
 {
-  "index": 34,
-  "name": "Finn the Funny Guard",
-  "slug": "finn-the-funny-guard",
   "gold_ratio": [
     1.041666667,
     0.7946666667,
     0.7617777778,
     0.7155555556
-  ]
+  ],
+  "index": 34,
+  "name": "Finn the Funny Guard",
+  "slug": "finn-the-funny-guard"
 }

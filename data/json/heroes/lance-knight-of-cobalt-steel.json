@@ -1,11 +1,11 @@
 {
-  "index": 3,
-  "name": "Lance, Knight of Cobalt Steel",
-  "slug": "lance-knight-of-cobalt-steel",
   "gold_ratio": [
     0.8347387086,
     0.9375,
     0.79375,
     0.73125
-  ]
+  ],
+  "index": 3,
+  "name": "Lance, Knight of Cobalt Steel",
+  "slug": "lance-knight-of-cobalt-steel"
 }

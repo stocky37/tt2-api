@@ -18,7 +18,7 @@ def load_tsv(filename):
 def save_json(data, output_dir, filename_prop="slug"):
     for item in data:
         with open("{}/{}.json".format(output_dir, item[filename_prop]), "w") as f:
-            json.dump(item, f, indent=2)
+            json.dump(item, f, indent=2, sort_keys=True)
 
 
 def load_data(tsv_filename, output_dir, transform):

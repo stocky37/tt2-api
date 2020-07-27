@@ -1,11 +1,11 @@
 {
-  "index": 33,
-  "name": "Zolom Blaster, Space Hunter",
-  "slug": "zolom-blaster-space-hunter",
   "gold_ratio": [
     1.211885882,
     0.7837837838,
     0.7627272727,
     0.7172727273
-  ]
+  ],
+  "index": 33,
+  "name": "Zolom Blaster, Space Hunter",
+  "slug": "zolom-blaster-space-hunter"
 }

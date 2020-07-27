@@ -1,11 +1,11 @@
 {
-  "index": 11,
-  "name": "Kiki the Dragon Rider",
-  "slug": "kiki-the-dragon-rider",
   "gold_ratio": [
     0.9196120843,
     0.85,
     0.7836363636,
     0.7181818182
-  ]
+  ],
+  "index": 11,
+  "name": "Kiki the Dragon Rider",
+  "slug": "kiki-the-dragon-rider"
 }

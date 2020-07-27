@@ -1,27 +1,4 @@
 {
-  "id": "Fairy",
-  "skill_tree": "Sorcerer",
-  "column": 0,
-  "tier": 3,
-  "name": "Fairy Charm",
-  "note": "Multi-fairy spawn bonus + lower fairy spawn cooldown",
-  "max_level": 10,
-  "unlock_stage": 700,
-  "slug": "fairy-charm",
-  "parent_id": "MidasSkillBoost",
-  "sp_required": [
-    0,
-    2,
-    2,
-    3,
-    3,
-    3,
-    4,
-    5,
-    5,
-    6,
-    7
-  ],
   "bonuses": [
     {
       "type": "FairySpawnChance",
@@ -55,5 +32,28 @@
         60.0
       ]
     }
-  ]
+  ],
+  "column": 0,
+  "id": "Fairy",
+  "max_level": 10,
+  "name": "Fairy Charm",
+  "note": "Multi-fairy spawn bonus + lower fairy spawn cooldown",
+  "parent_id": "MidasSkillBoost",
+  "skill_tree": "Sorcerer",
+  "slug": "fairy-charm",
+  "sp_required": [
+    0,
+    2,
+    2,
+    3,
+    3,
+    3,
+    4,
+    5,
+    5,
+    6,
+    7
+  ],
+  "tier": 3,
+  "unlock_stage": 700
 }

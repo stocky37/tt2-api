@@ -1,11 +1,11 @@
 {
-  "index": 12,
-  "name": "Maddie, Shadow Thief",
-  "slug": "maddie-shadow-thief",
   "gold_ratio": [
     0.9184269116,
     0.8405660377,
     0.7808695652,
     0.72
-  ]
+  ],
+  "index": 12,
+  "name": "Maddie, Shadow Thief",
+  "slug": "maddie-shadow-thief"
 }

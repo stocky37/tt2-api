@@ -1,11 +1,11 @@
 {
-  "index": 7,
-  "name": "Captain Davey Cannon",
-  "slug": "captain-davey-cannon",
   "gold_ratio": [
     0.9464745585,
     0.875,
     0.7775,
     0.7
-  ]
+  ],
+  "index": 7,
+  "name": "Captain Davey Cannon",
+  "slug": "captain-davey-cannon"
 }

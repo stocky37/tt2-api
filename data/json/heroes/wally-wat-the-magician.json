@@ -1,11 +1,11 @@
 {
-  "index": 17,
-  "name": "Wally Wat the Magician",
-  "slug": "wally-wat-the-magician",
   "gold_ratio": [
     0.9003562889,
     0.7982758621,
     0.78,
     0.7242857143
-  ]
+  ],
+  "index": 17,
+  "name": "Wally Wat the Magician",
+  "slug": "wally-wat-the-magician"
 }

@@ -1,11 +1,11 @@
 {
-  "index": 36,
-  "name": "Damon of the Darkness",
-  "slug": "damon-of-the-darkness",
   "gold_ratio": [
     0.5333333333,
     0.9555555556,
     0.9266666667,
     0.7
-  ]
+  ],
+  "index": 36,
+  "name": "Damon of the Darkness",
+  "slug": "damon-of-the-darkness"
 }

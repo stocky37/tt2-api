@@ -1,33 +1,4 @@
 {
-  "id": "ForbiddenContract",
-  "skill_tree": "Rogue",
-  "column": 0,
-  "tier": 4,
-  "name": "Forbidden Contract",
-  "note": "Activate QTE to drain mana for more damage.",
-  "max_level": 15,
-  "unlock_stage": 800,
-  "slug": "forbidden-contract",
-  "parent_id": "StrokeOfLuck",
-  "sp_required": [
-    0,
-    3,
-    4,
-    5,
-    7,
-    9,
-    12,
-    16,
-    21,
-    27,
-    35,
-    46,
-    60,
-    78,
-    101,
-    131,
-    170
-  ],
   "bonuses": [
     {
       "type": "ForbiddenContractMaxDamage",
@@ -73,5 +44,34 @@
         1.3
       ]
     }
-  ]
+  ],
+  "column": 0,
+  "id": "ForbiddenContract",
+  "max_level": 15,
+  "name": "Forbidden Contract",
+  "note": "Activate QTE to drain mana for more damage.",
+  "parent_id": "StrokeOfLuck",
+  "skill_tree": "Rogue",
+  "slug": "forbidden-contract",
+  "sp_required": [
+    0,
+    3,
+    4,
+    5,
+    7,
+    9,
+    12,
+    16,
+    21,
+    27,
+    35,
+    46,
+    60,
+    78,
+    101,
+    131,
+    170
+  ],
+  "tier": 4,
+  "unlock_stage": 800
 }

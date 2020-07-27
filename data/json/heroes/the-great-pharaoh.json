@@ -1,11 +1,11 @@
 {
-  "index": 19,
-  "name": "The Great Pharaoh",
-  "slug": "the-great-pharaoh",
   "gold_ratio": [
     1.00045637,
     0.79,
     0.7773333333,
     0.724
-  ]
+  ],
+  "index": 19,
+  "name": "The Great Pharaoh",
+  "slug": "the-great-pharaoh"
 }

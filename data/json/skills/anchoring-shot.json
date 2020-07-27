@@ -1,33 +1,4 @@
 {
-  "id": "ClanShipStun",
-  "skill_tree": "Warlord",
-  "column": 2,
-  "tier": 4,
-  "name": "Anchoring Shot",
-  "note": "Stun Titan for increased damage",
-  "max_level": 15,
-  "unlock_stage": 1200,
-  "slug": "anchoring-shot",
-  "parent_id": "ClanQTE",
-  "sp_required": [
-    0,
-    3,
-    4,
-    5,
-    7,
-    9,
-    12,
-    16,
-    21,
-    27,
-    35,
-    46,
-    60,
-    78,
-    101,
-    131,
-    170
-  ],
   "bonuses": [
     {
       "type": "ClanShipStunDamage",
@@ -73,5 +44,34 @@
         2.2
       ]
     }
-  ]
+  ],
+  "column": 2,
+  "id": "ClanShipStun",
+  "max_level": 15,
+  "name": "Anchoring Shot",
+  "note": "Stun Titan for increased damage",
+  "parent_id": "ClanQTE",
+  "skill_tree": "Warlord",
+  "slug": "anchoring-shot",
+  "sp_required": [
+    0,
+    3,
+    4,
+    5,
+    7,
+    9,
+    12,
+    16,
+    21,
+    27,
+    35,
+    46,
+    60,
+    78,
+    101,
+    131,
+    170
+  ],
+  "tier": 4,
+  "unlock_stage": 1200
 }
