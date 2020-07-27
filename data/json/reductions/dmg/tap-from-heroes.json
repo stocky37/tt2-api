@@ -1,0 +1,9 @@
+{
+  "affects": "Tap from heroes%",
+  "cs": "0",
+  "hs": "1",
+  "pet": "1",
+  "sc": "1",
+  "slug": "tap-from-heroes",
+  "type": "dmg"
+}

@@ -1,0 +1,9 @@
+{
+  "affects": "Base hero",
+  "cs": "1",
+  "hs": "1",
+  "pet": "1",
+  "sc": "1",
+  "slug": "base-hero",
+  "type": "dmg"
+}

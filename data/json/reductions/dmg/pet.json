@@ -1,0 +1,9 @@
+{
+  "affects": "Pet",
+  "cs": "0",
+  "hs": "0",
+  "pet": "1",
+  "sc": "0",
+  "slug": "pet",
+  "type": "dmg"
+}

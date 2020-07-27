@@ -1,0 +1,9 @@
+{
+  "affects": "Tap",
+  "cs": "0",
+  "hs": "1",
+  "pet": "1",
+  "sc": "0.6",
+  "slug": "tap",
+  "type": "dmg"
+}
