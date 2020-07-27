@@ -1,0 +1,372 @@
+[
+  {
+    "gold_ratio": [
+      0.8226550309,
+      0.75,
+      0.75,
+      0.65
+    ],
+    "name": "Maya Muerta the Watcher",
+    "slug": "maya-muerta-the-watcher"
+  },
+  {
+    "gold_ratio": [
+      0.8122370815,
+      0.875,
+      0.775,
+      0.7
+    ],
+    "name": "Zato the Blind Staff Master",
+    "slug": "zato-the-blind-staff-master"
+  },
+  {
+    "gold_ratio": [
+      0.8021335718,
+      0.9166666667,
+      0.7916666667,
+      0.7166666667
+    ],
+    "name": "Sophia, Champion of Swords",
+    "slug": "sophia-champion-of-swords"
+  },
+  {
+    "gold_ratio": [
+      0.8347387086,
+      0.9375,
+      0.79375,
+      0.73125
+    ],
+    "name": "Lance, Knight of Cobalt Steel",
+    "slug": "lance-knight-of-cobalt-steel"
+  },
+  {
+    "gold_ratio": [
+      0.9444150877,
+      0.84,
+      0.8,
+      0.748
+    ],
+    "name": "Pingo of the Tori",
+    "slug": "pingo-of-the-tori"
+  },
+  {
+    "gold_ratio": [
+      0.961935642,
+      0.8333333333,
+      0.79,
+      0.7233333333
+    ],
+    "name": "Rosabella Bonnie Archer",
+    "slug": "rosabella-bonnie-archer"
+  },
+  {
+    "gold_ratio": [
+      0.9288908624,
+      0.7714285714,
+      0.7714285714,
+      0.6885714286
+    ],
+    "name": "Gulbrand the Destroyer",
+    "slug": "gulbrand-the-destroyer"
+  },
+  {
+    "gold_ratio": [
+      0.9464745585,
+      0.875,
+      0.7775,
+      0.7
+    ],
+    "name": "Captain Davey Cannon",
+    "slug": "captain-davey-cannon"
+  },
+  {
+    "gold_ratio": [
+      0.9370578518,
+      0.87,
+      0.78,
+      0.7088888889
+    ],
+    "name": "Rhys Mage of Order Evetga",
+    "slug": "rhys-mage-of-order-evetga"
+  },
+  {
+    "gold_ratio": [
+      0.9416185359,
+      0.74,
+      0.782,
+      0.716
+    ],
+    "name": "Kronus, Bringer of Judgement",
+    "slug": "kronus-bringer-of-judgement"
+  },
+  {
+    "gold_ratio": [
+      0.9294650072,
+      0.7693548387,
+      0.780952381,
+      0.7180952381
+    ],
+    "name": "Cosette, Jewel of House Sabre",
+    "slug": "cosette-jewel-of-house-sabre"
+  },
+  {
+    "gold_ratio": [
+      0.9196120843,
+      0.85,
+      0.7836363636,
+      0.7181818182
+    ],
+    "name": "Kiki the Dragon Rider",
+    "slug": "kiki-the-dragon-rider"
+  },
+  {
+    "gold_ratio": [
+      0.9184269116,
+      0.8405660377,
+      0.7808695652,
+      0.72
+    ],
+    "name": "Maddie, Shadow Thief",
+    "slug": "maddie-shadow-thief"
+  },
+  {
+    "gold_ratio": [
+      0.807845503,
+      0.8314814815,
+      0.7833333333,
+      0.7216666667
+    ],
+    "name": "Beany Sprout the 1st",
+    "slug": "beany-sprout-the-1st"
+  },
+  {
+    "gold_ratio": [
+      0.7833120913,
+      0.8227272727,
+      0.7808,
+      0.7216
+    ],
+    "name": "Sawyer the Wild Gunslinger",
+    "slug": "sawyer-the-wild-gunslinger"
+  },
+  {
+    "gold_ratio": [
+      0.8892322322,
+      0.8142857143,
+      0.78,
+      0.7230769231
+    ],
+    "name": "Lil' Ursa",
+    "slug": "lil-ursa"
+  },
+  {
+    "gold_ratio": [
+      0.8600304968,
+      0.8061403509,
+      0.7807407407,
+      0.722962963
+    ],
+    "name": "Saje the Garden Keeper",
+    "slug": "saje-the-garden-keeper"
+  },
+  {
+    "gold_ratio": [
+      0.9003562889,
+      0.7982758621,
+      0.78,
+      0.7242857143
+    ],
+    "name": "Wally Wat the Magician",
+    "slug": "wally-wat-the-magician"
+  },
+  {
+    "gold_ratio": [
+      0.8753275501,
+      0.7938983051,
+      0.7793103448,
+      0.7227586207
+    ],
+    "name": "Jayce the Ruthless Cutter",
+    "slug": "jayce-the-ruthless-cutter"
+  },
+  {
+    "gold_ratio": [
+      1.00045637,
+      0.79,
+      0.7773333333,
+      0.724
+    ],
+    "name": "The Great Pharaoh",
+    "slug": "the-great-pharaoh"
+  },
+  {
+    "gold_ratio": [
+      0.9998438823,
+      0.786557377,
+      0.7780645161,
+      0.7238709677
+    ],
+    "name": "Boomoh Doctor",
+    "slug": "boomoh-doctor"
+  },
+  {
+    "gold_ratio": [
+      1.000129704,
+      0.7835483871,
+      0.77625,
+      0.72375
+    ],
+    "name": "Dex-1000",
+    "slug": "dex-1000"
+  },
+  {
+    "gold_ratio": [
+      1.000099454,
+      0.7817460317,
+      0.7757575758,
+      0.7236363636
+    ],
+    "name": "The Great Madame Cass",
+    "slug": "the-great-madame-cass"
+  },
+  {
+    "gold_ratio": [
+      0.9999580959,
+      0.778125,
+      0.7741176471,
+      0.7223529412
+    ],
+    "name": "Lala Quickshot",
+    "slug": "lala-quickshot"
+  },
+  {
+    "gold_ratio": [
+      1.000030442,
+      0.7769230769,
+      0.7737142857,
+      0.7234285714
+    ],
+    "name": "Aya the Lightning Violet",
+    "slug": "aya-the-lightning-violet"
+  },
+  {
+    "gold_ratio": [
+      0.9999501944,
+      0.7757575758,
+      0.7722222222,
+      0.7222222222
+    ],
+    "name": "Lady Lucy the Night Caster",
+    "slug": "lady-lucy-the-night-caster"
+  },
+  {
+    "gold_ratio": [
+      1.039477594,
+      0.7746268657,
+      0.7718918919,
+      0.7221621622
+    ],
+    "name": "Jazz Rockerfellow",
+    "slug": "jazz-rockerfellow"
+  },
+  {
+    "gold_ratio": [
+      1.124043927,
+      0.7735294118,
+      0.7705263158,
+      0.7210526316
+    ],
+    "name": "Maple the Autumn Guardian",
+    "slug": "maple-the-autumn-guardian"
+  },
+  {
+    "gold_ratio": [
+      1.120820107,
+      0.7724637681,
+      0.7692307692,
+      0.721025641
+    ],
+    "name": "Kin the Puffy Beast",
+    "slug": "kin-the-puffy-beast"
+  },
+  {
+    "gold_ratio": [
+      1.037091728,
+      0.7728571429,
+      0.768,
+      0.72
+    ],
+    "name": "Princess Titania of Fay",
+    "slug": "princess-titania-of-fay"
+  },
+  {
+    "gold_ratio": [
+      1.107533847,
+      0.7732394366,
+      0.7668292683,
+      0.7190243902
+    ],
+    "name": "Miki the Graceful Dancer",
+    "slug": "miki-the-graceful-dancer"
+  },
+  {
+    "gold_ratio": [
+      1.142857143,
+      0.7736111111,
+      0.7657142857,
+      0.719047619
+    ],
+    "name": "Mina the Priestess of Light",
+    "slug": "mina-the-priestess-of-light"
+  },
+  {
+    "gold_ratio": [
+      1.041115883,
+      0.7739726027,
+      0.7646511628,
+      0.7172093023
+    ],
+    "name": "Yzafa the Fearsome Bandit",
+    "slug": "yzafa-the-fearsome-bandit"
+  },
+  {
+    "gold_ratio": [
+      1.211885882,
+      0.7837837838,
+      0.7627272727,
+      0.7172727273
+    ],
+    "name": "Zolom Blaster, Space Hunter",
+    "slug": "zolom-blaster-space-hunter"
+  },
+  {
+    "gold_ratio": [
+      1.041666667,
+      0.7946666667,
+      0.7617777778,
+      0.7155555556
+    ],
+    "name": "Finn the Funny Guard",
+    "slug": "finn-the-funny-guard"
+  },
+  {
+    "gold_ratio": [
+      1.5,
+      0.8105263158,
+      0.7608695652,
+      0.7156521739
+    ],
+    "name": "Nohni the Spearit",
+    "slug": "nohni-the-spearit"
+  },
+  {
+    "gold_ratio": [
+      0.5333333333,
+      0.9555555556,
+      0.9266666667,
+      0.7
+    ],
+    "name": "Damon of the Darkness",
+    "slug": "damon-of-the-darkness"
+  }
+]

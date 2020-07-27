@@ -1,0 +1,146 @@
+[
+  {
+    "affects": "Tap",
+    "cs": "0",
+    "hs": "1",
+    "pet": "1",
+    "sc": "0.6",
+    "slug": "tap",
+    "type": "dmg"
+  },
+  {
+    "affects": "Hero",
+    "cs": "1",
+    "hs": "0.5",
+    "pet": "0.5",
+    "sc": "0.6",
+    "slug": "hero",
+    "type": "dmg"
+  },
+  {
+    "affects": "Base hero",
+    "cs": "1",
+    "hs": "1",
+    "pet": "1",
+    "sc": "1",
+    "slug": "base-hero",
+    "type": "dmg"
+  },
+  {
+    "affects": "SAD",
+    "cs": "0",
+    "hs": "0.8",
+    "pet": "0",
+    "sc": "0.6",
+    "slug": "sad",
+    "type": "dmg"
+  },
+  {
+    "affects": "Pet",
+    "cs": "0",
+    "hs": "0",
+    "pet": "1",
+    "sc": "0",
+    "slug": "pet",
+    "type": "dmg"
+  },
+  {
+    "affects": "CS",
+    "cs": "1",
+    "hs": "0",
+    "pet": "0",
+    "sc": "0",
+    "slug": "cs",
+    "type": "dmg"
+  },
+  {
+    "affects": "HS",
+    "cs": "0",
+    "hs": "1",
+    "pet": "0",
+    "sc": "0",
+    "slug": "hs",
+    "type": "dmg"
+  },
+  {
+    "affects": "DS",
+    "cs": "0.5",
+    "hs": "0",
+    "pet": "0.7",
+    "sc": "0.6",
+    "slug": "ds",
+    "type": "dmg"
+  },
+  {
+    "affects": "FS",
+    "cs": "0",
+    "hs": "1",
+    "pet": "1",
+    "sc": "0.6",
+    "slug": "fs",
+    "type": "dmg"
+  },
+  {
+    "affects": "WC",
+    "cs": "1",
+    "hs": "0.5",
+    "pet": "0.5",
+    "sc": "0.6",
+    "slug": "wc",
+    "type": "dmg"
+  },
+  {
+    "affects": "SC",
+    "cs": "0",
+    "hs": "0",
+    "pet": "0",
+    "sc": "1",
+    "slug": "sc",
+    "type": "dmg"
+  },
+  {
+    "affects": "All",
+    "cs": "1",
+    "hs": "1",
+    "pet": "1",
+    "sc": "1",
+    "slug": "all",
+    "type": "dmg"
+  },
+  {
+    "affects": "Crit dmg",
+    "cs": "1",
+    "hs": "1",
+    "pet": "1",
+    "sc": "1",
+    "slug": "crit-dmg",
+    "type": "dmg"
+  },
+  {
+    "affects": "Crit chance",
+    "cs": "0.5",
+    "hs": "0",
+    "pet": "1",
+    "sc": "1.5",
+    "slug": "crit-chance",
+    "type": "dmg"
+  },
+  {
+    "affects": "Tap from heroes%",
+    "cs": "0",
+    "hs": "1",
+    "pet": "1",
+    "sc": "1",
+    "slug": "tap-from-heroes",
+    "type": "dmg"
+  },
+  {
+    "affects": "All Prob",
+    "cs": "1",
+    "hs": "0",
+    "pet": "1.7",
+    "sc": "2.1",
+    "slug": "all-prob",
+    "type": "dmg"
+  }
+]

@@ -24,15 +24,15 @@ def transform_abilities(abilities_data):
     return attempts, atkspd
 
 
-def load_ability_data(tsv_filename, output_dir):
+def load_ability_data(tsv_filename, output_path):
     attempts, atkspd = transform_abilities(load_tsv(tsv_filename))
 
     for idx, ability in enumerate(abilities):
-        ability["index"] = idx
         ability["slug"] = slugify(ability["name"])
         if ability["id"] == "SC":
             ability["attempts"] = attempts
         elif ability["id"] == "WC":
             ability["atkspd"] = atkspd
-        with open("{}/{}.json".format(output_dir, ability["slug"]), "w") as f:
-            json.dump(ability, f, indent=2, sort_keys=True)
+
+    with open(output_path, "w") as f:
+        json.dump(abilities, f, indent=2, sort_keys=True)

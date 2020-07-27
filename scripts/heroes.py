@@ -4,7 +4,6 @@ from slugify import slugify
 def transform_heroes(heroes_data):
     return [
         {
-            "index": idx,
             "name": hero_data["Name"],
             "slug": slugify(hero_data["Name"]),
             "gold_ratio": [

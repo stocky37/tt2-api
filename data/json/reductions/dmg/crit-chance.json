@@ -1,9 +1,0 @@
-{
-  "affects": "Crit chance",
-  "cs": "0.5",
-  "hs": "0",
-  "pet": "1",
-  "sc": "1.5",
-  "slug": "crit-chance",
-  "type": "dmg"
-}

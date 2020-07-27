@@ -15,12 +15,22 @@ def load_tsv(filename):
         return list(csv.DictReader(tsv, fieldnames=header, delimiter="\t"))
 
 
-def save_json(data, output_dir, filename_prop="slug"):
+# save data in a single json file
+def save_json_single(data, output_path):
+    with open(output_path, "w") as f:
+        json.dump(data, f, indent=2, sort_keys=True)
+
+
+# save data in individual json files
+def save_json_multi(data, output_path, filename_prop="slug"):
     for item in data:
-        with open("{}/{}.json".format(output_dir, item[filename_prop]), "w") as f:
+        with open("{}/{}.json".format(output_path, item[filename_prop]), "w") as f:
             json.dump(item, f, indent=2, sort_keys=True)
 
 
-def load_data(tsv_filename, output_dir, transform):
-    data = load_tsv(tsv_filename)
-    save_json(transform(data), output_dir)
+def load_data(tsv_filename, output_path, transform, *, multi=False):
+    data = transform(load_tsv(tsv_filename))
+    if multi:
+        save_json_multi(data, output_path)
+    else:
+        save_json_single(data, output_path)

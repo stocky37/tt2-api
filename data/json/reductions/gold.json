@@ -1,0 +1,83 @@
+[
+  {
+    "affects": "pHoM",
+    "boss": "0",
+    "chesterson": "0",
+    "fairy": "0",
+    "phom": "1",
+    "slug": "phom",
+    "type": "gold"
+  },
+  {
+    "affects": "Chesterson",
+    "boss": "0",
+    "chesterson": "1",
+    "fairy": "1",
+    "phom": "0",
+    "slug": "chesterson",
+    "type": "gold"
+  },
+  {
+    "affects": "HoM",
+    "boss": "1",
+    "chesterson": "1",
+    "fairy": "0.6",
+    "phom": "0.6",
+    "slug": "hom",
+    "type": "gold"
+  },
+  {
+    "affects": "All",
+    "boss": "1",
+    "chesterson": "1",
+    "fairy": "1",
+    "phom": "1",
+    "slug": "all",
+    "type": "gold"
+  },
+  {
+    "affects": "Chesterson chance",
+    "boss": "0",
+    "chesterson": "1",
+    "fairy": "1",
+    "phom": "0",
+    "slug": "chesterson-chance",
+    "type": "gold"
+  },
+  {
+    "affects": "Fairy",
+    "boss": "0",
+    "chesterson": "0",
+    "fairy": "1",
+    "phom": "0",
+    "slug": "fairy",
+    "type": "gold"
+  },
+  {
+    "affects": "Boss",
+    "boss": "1",
+    "chesterson": "0",
+    "fairy": "0",
+    "phom": "1",
+    "slug": "boss",
+    "type": "gold"
+  },
+  {
+    "affects": "Multispawn",
+    "boss": "0",
+    "chesterson": "0",
+    "fairy": "0",
+    "phom": "0",
+    "slug": "multispawn",
+    "type": "gold"
+  },
+  {
+    "affects": "All Prob",
+    "boss": "1",
+    "chesterson": "1",
+    "fairy": "0.6",
+    "phom": "0.6",
+    "slug": "all-prob",
+    "type": "gold"
+  }
+]
