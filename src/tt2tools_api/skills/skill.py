@@ -1,7 +1,7 @@
 from anytree import NodeMixin
 
 
-class Skill(NodeMixin):
+class Skill:
     def __init__(
         self,
         *,
@@ -14,11 +14,10 @@ class Skill(NodeMixin):
         sp_required,
         bonuses,
         max_level,
-        parent=None,
-        children=None,
+        skill_tree,
+        parent_id=None,
         **kwargs
     ):
-        self.__dict__.update(kwargs)
         self.id = id
         self.name = name
         self.slug = slug
@@ -28,9 +27,8 @@ class Skill(NodeMixin):
         self.sp_required = sp_required
         self.bonuses = bonuses
         self.max_level = max_level
-        self.parent = parent
-        if children:
-            self.children = children
+        self.skill_tree = skill_tree
+        self.parent_id = parent_id
 
     def __repr__(self):
         return "Skill({})".format(self.name)
