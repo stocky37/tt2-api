@@ -73,6 +73,16 @@
   "name": "Lightning Burst",
   "note": "Increased pet QTE damage / Pet splash count",
   "parent_id": "PetGoldQTE",
+  "reductions": {
+    "dmg": {
+      "cs": 0.0,
+      "hero": 0.0,
+      "hs": 0.0,
+      "pet": 1.0,
+      "sc": 0.0,
+      "tap": 0.0
+    }
+  },
   "skill_tree": "Knight",
   "slug": "lightning-burst",
   "sp_required": [

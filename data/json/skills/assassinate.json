@@ -69,6 +69,16 @@
   "name": "Assassinate",
   "note": "Deadly Strike damage boost",
   "parent_id": "OfflineGold",
+  "reductions": {
+    "dmg": {
+      "cs": 0.5,
+      "hero": 0.0,
+      "hs": 0.0,
+      "pet": 0.7,
+      "sc": 0.6,
+      "tap": 1.0
+    }
+  },
   "skill_tree": "Rogue",
   "slug": "assassinate",
   "sp_required": [

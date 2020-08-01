@@ -1,17 +1,26 @@
-Affects	CS	SC	HS	Pet
-Tap	0	0.6	1	1
-Hero	1	0.6	0.5	0.5
-Base hero	1	1	1	1
-SAD	0	0.6	0.8	0
-Pet	0	0	0	1
-CS	1	0	0	0
-HS	0	0	1	0
-DS	0.5	0.6	0	0.7
-FS	0	0.6	1	1
-WC	1	0.6	0.5	0.5
-SC	0	1	0	0
-All	1	1	1	1
-Crit dmg	1	1	1	1
-Crit chance	0.5	1.5	0	1
-Tap from heroes%	0	1	1	1
-All Prob	1	2.1	0	1.7
+Name	CS	SC	HS	Pet	Hero	Tap
+Tap	0	0.6	1	1	0	1
+Hero (All/Type/Terrain)	1	0.6	0.5	0.5	1	0.5
+Base hero (Hero levels/Hero weapons)	1	1	1	1	1	1
+SAD	0	0.6	0.8	0	0	1
+Pet	0	0	0	1	0	0
+CS	1	0	0	0	0	0
+HS	0	0	1	0	0	0
+DS (Chance/Damage)	0.5	0.6	0	0.7	0	1
+FS	0	0.6	1	1	0	1
+WC	1	0.6	0.5	0.5	1	0.5
+SC	0	1	0	0	0	0
+All	1	1	1	1	1	1
+Crit dmg	1	1	1	1	0	1
+Crit chance	0.5	1.5	0	1	0	1
+Stealth	1	1	1	1	1	1
+Inactive	0	0	0	0	0	0
+Companion (Pet, SC, CS)	1	1	0	1	0	0
+Knight boost (Tap, Pet, FS)	0	1.2	2	3	0	2
+Warlord boost (All Hero, CS, WC)	3	1.2	1	1	2	1
+Sorcerer boost (SC, HS, HoM)*	0	1	1	0	0	0
+Rogue boost (DS, inactive dmg/gold)*	0.5	0.6	0.6	0.6	0	1
+Fundamental damage (All Hero, Tap)	1	1.2	1.5	1.5	1	1.5
+Pet damage bonuses**	6	5.6	6	6	6	6
+Artifact damage bonuses***	15	14.2	13.8	15	12	13
+Tap from heroes%	0	1	1	1	0	1

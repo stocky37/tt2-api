@@ -69,6 +69,16 @@
   "name": "Stroke Of Luck",
   "note": "Companions benefit from DS and enable x1000 Gold Drops.",
   "parent_id": "CritSkillBoostDmg",
+  "reductions": {
+    "dmg": {
+      "cs": 1.0,
+      "hero": 0.0,
+      "hs": 0.0,
+      "pet": 1.0,
+      "sc": 1.0,
+      "tap": 0.0
+    }
+  },
   "skill_tree": "Rogue",
   "slug": "stroke-of-luck",
   "sp_required": [

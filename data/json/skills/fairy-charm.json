@@ -39,6 +39,16 @@
   "name": "Fairy Charm",
   "note": "Multi-fairy spawn bonus + lower fairy spawn cooldown",
   "parent_id": "MidasSkillBoost",
+  "reductions": {
+    "gold": {
+      "all-boss": 0.0,
+      "chesterson": 0.0,
+      "fairy": 1.0,
+      "inactive": 0.0,
+      "phom": 0.0,
+      "splash": 0.0
+    }
+  },
   "skill_tree": "Sorcerer",
   "slug": "fairy-charm",
   "sp_required": [

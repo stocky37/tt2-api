@@ -1,10 +1,16 @@
-Affects	Fairy	Boss	pHoM	Chesterson
-pHoM	0	0	1	0
-Chesterson	1	0	0	1
-HoM	0.6	1	0.6	1
-All	1	1	1	1
-Chesterson chance	1	0	0	1
-Fairy	1	0	0	0
-Boss	0	1	1	0
-Multispawn	0	0	0	0
-All Prob	0.6	1	0.6	1
+Name	Fairy	All/Boss	pHoM	Splash	Chesterson	Inactive
+pHoM	0	0	1	0	0	0
+Chesterson	1	0	0	1	1	1
+HoM	0.6	1	0.6	1	1	0
+All	1	1	1	1	1	1
+Chesterson chance	1	0	0	1	1	1
+Fairy	1	0	0	0	0	0
+Boss	0	1	1	1	0	1
+Multi-Spawn	0	0	0	0	1	1
+Specialty Gold (Fairy, pHoM)	1	0	1	0	0	0
+Sorcerer boost (SC, HS, HoM)*	0.6	1	0.6	1	1	0
+Rogue boost (DS, inactive dmg/gold)*	0	0	0	0	0	1
+Pet gold bonuses (2x All Gold)	2	2	2	2	2	2
+Artifact gold bonuses**	9	8	9	7	8	6
+Stealth	1	1	1	1	1	2
+Inactive	0	0	0	0	0	1

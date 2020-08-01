@@ -53,6 +53,7 @@
   "name": "Cloaking",
   "note": "Killing bosses has a chance to skip stages.",
   "parent_id": "MultiMonsters",
+  "reductions": {},
   "skill_tree": "Rogue",
   "slug": "cloaking",
   "sp_required": [

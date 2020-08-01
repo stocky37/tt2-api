@@ -69,6 +69,16 @@
   "name": "Cleaving Strike",
   "note": "Increased max critical damage",
   "parent_id": "TapDmgFromHelpers",
+  "reductions": {
+    "dmg": {
+      "cs": 1.0,
+      "hero": 0.0,
+      "hs": 1.0,
+      "pet": 1.0,
+      "sc": 1.0,
+      "tap": 1.0
+    }
+  },
   "skill_tree": "Knight",
   "slug": "cleaving-strike",
   "sp_required": [

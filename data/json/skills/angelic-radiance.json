@@ -69,6 +69,16 @@
   "name": "Angelic Radiance",
   "note": "Increased damage + splash through bosses",
   "parent_id": "MPCapacityBoost",
+  "reductions": {
+    "dmg": {
+      "cs": 0.0,
+      "hero": 0.0,
+      "hs": 1.0,
+      "pet": 0.0,
+      "sc": 0.0,
+      "tap": 0.0
+    }
+  },
   "skill_tree": "Sorcerer",
   "slug": "angelic-radiance",
   "sp_required": [

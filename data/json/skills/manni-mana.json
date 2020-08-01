@@ -51,6 +51,7 @@
   "name": "Manni Mana",
   "note": "Chance for mana monster to spawn (gives mana)",
   "parent_id": "Fairy",
+  "reductions": {},
   "skill_tree": "Sorcerer",
   "slug": "manni-mana",
   "sp_required": [

@@ -51,6 +51,24 @@
   "name": "Dimensional Shift",
   "note": "Increase active skill effects and duration",
   "parent_id": "CloneSkillBoost",
+  "reductions": {
+    "dmg": {
+      "cs": 1.5,
+      "hero": 1.0,
+      "hs": 2.5,
+      "pet": 2.2,
+      "sc": 2.8,
+      "tap": 2.5
+    },
+    "gold": {
+      "all-boss": 1.0,
+      "chesterson": 1.0,
+      "fairy": 0.6,
+      "inactive": 0.0,
+      "phom": 0.6,
+      "splash": 1.0
+    }
+  },
   "skill_tree": "Sorcerer",
   "slug": "dimensional-shift",
   "sp_required": [

@@ -55,6 +55,16 @@
   "name": "Guided Blade",
   "note": "Chance to gain stackable DS buff after each DS.",
   "parent_id": "Cloaking",
+  "reductions": {
+    "dmg": {
+      "cs": 1.5,
+      "hero": 0.0,
+      "hs": 0.0,
+      "pet": 1.7,
+      "sc": 1.6,
+      "tap": 1.0
+    }
+  },
   "skill_tree": "Rogue",
   "slug": "guided-blade",
   "sp_required": [

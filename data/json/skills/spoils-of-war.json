@@ -69,6 +69,16 @@
   "name": "Spoils of War",
   "note": "Boost to chesterson gold / chesterton chance",
   "parent_id": "AllHelperDmg",
+  "reductions": {
+    "gold": {
+      "all-boss": 0.0,
+      "chesterson": 1.0,
+      "fairy": 1.0,
+      "inactive": 1.0,
+      "phom": 0.0,
+      "splash": 1.0
+    }
+  },
   "skill_tree": "Warlord",
   "slug": "spoils-of-war",
   "sp_required": [

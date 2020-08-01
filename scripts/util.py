@@ -1,5 +1,8 @@
 import csv
 import json
+from typing import Callable, List, Dict
+
+from slugify import slugify
 
 
 def num(val):
@@ -7,6 +10,13 @@ def num(val):
         return int(val)
     except ValueError:
         return float(val)
+
+
+def to_dict(objects: List[Dict], key: str = "id"):
+    normalised = {}
+    for obj in objects:
+        normalised[obj[key]] = obj
+    return normalised
 
 
 def load_tsv(filename):

@@ -69,6 +69,16 @@
   "name": "Inspired Shot",
   "note": "Inspired heroes weaken Titans during War Cry",
   "parent_id": "HelperDmgSkillBoost",
+  "reductions": {
+    "dmg": {
+      "cs": 1.0,
+      "hero": 1.0,
+      "hs": 0.5,
+      "pet": 0.5,
+      "sc": 0.6,
+      "tap": 0.5
+    }
+  },
   "skill_tree": "Warlord",
   "slug": "inspired-shot",
   "sp_required": [

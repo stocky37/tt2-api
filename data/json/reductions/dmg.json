@@ -1,146 +1,302 @@
 [
   {
-    "affects": "Tap",
-    "cs": "0",
-    "hs": "1",
-    "pet": "1",
-    "sc": "0.6",
-    "slug": "tap",
-    "type": "dmg"
+    "name": "Tap",
+    "reductions": {
+      "cs": 0.0,
+      "hero": 0.0,
+      "hs": 1.0,
+      "pet": 1.0,
+      "sc": 0.6,
+      "tap": 1.0
+    },
+    "slug": "tap"
   },
   {
-    "affects": "Hero",
-    "cs": "1",
-    "hs": "0.5",
-    "pet": "0.5",
-    "sc": "0.6",
-    "slug": "hero",
-    "type": "dmg"
+    "name": "Hero (All/Type/Terrain)",
+    "reductions": {
+      "cs": 1.0,
+      "hero": 1.0,
+      "hs": 0.5,
+      "pet": 0.5,
+      "sc": 0.6,
+      "tap": 0.5
+    },
+    "slug": "hero"
   },
   {
-    "affects": "Base hero",
-    "cs": "1",
-    "hs": "1",
-    "pet": "1",
-    "sc": "1",
-    "slug": "base-hero",
-    "type": "dmg"
+    "name": "Base hero (Hero levels/Hero weapons)",
+    "reductions": {
+      "cs": 1.0,
+      "hero": 1.0,
+      "hs": 1.0,
+      "pet": 1.0,
+      "sc": 1.0,
+      "tap": 1.0
+    },
+    "slug": "base-hero"
   },
   {
-    "affects": "SAD",
-    "cs": "0",
-    "hs": "0.8",
-    "pet": "0",
-    "sc": "0.6",
-    "slug": "sad",
-    "type": "dmg"
+    "name": "SAD",
+    "reductions": {
+      "cs": 0.0,
+      "hero": 0.0,
+      "hs": 0.8,
+      "pet": 0.0,
+      "sc": 0.6,
+      "tap": 1.0
+    },
+    "slug": "sad"
   },
   {
-    "affects": "Pet",
-    "cs": "0",
-    "hs": "0",
-    "pet": "1",
-    "sc": "0",
-    "slug": "pet",
-    "type": "dmg"
+    "name": "Pet",
+    "reductions": {
+      "cs": 0.0,
+      "hero": 0.0,
+      "hs": 0.0,
+      "pet": 1.0,
+      "sc": 0.0,
+      "tap": 0.0
+    },
+    "slug": "pet"
   },
   {
-    "affects": "CS",
-    "cs": "1",
-    "hs": "0",
-    "pet": "0",
-    "sc": "0",
-    "slug": "cs",
-    "type": "dmg"
+    "name": "CS",
+    "reductions": {
+      "cs": 1.0,
+      "hero": 0.0,
+      "hs": 0.0,
+      "pet": 0.0,
+      "sc": 0.0,
+      "tap": 0.0
+    },
+    "slug": "cs"
   },
   {
-    "affects": "HS",
-    "cs": "0",
-    "hs": "1",
-    "pet": "0",
-    "sc": "0",
-    "slug": "hs",
-    "type": "dmg"
+    "name": "HS",
+    "reductions": {
+      "cs": 0.0,
+      "hero": 0.0,
+      "hs": 1.0,
+      "pet": 0.0,
+      "sc": 0.0,
+      "tap": 0.0
+    },
+    "slug": "hs"
   },
   {
-    "affects": "DS",
-    "cs": "0.5",
-    "hs": "0",
-    "pet": "0.7",
-    "sc": "0.6",
-    "slug": "ds",
-    "type": "dmg"
+    "name": "DS (Chance/Damage)",
+    "reductions": {
+      "cs": 0.5,
+      "hero": 0.0,
+      "hs": 0.0,
+      "pet": 0.7,
+      "sc": 0.6,
+      "tap": 1.0
+    },
+    "slug": "ds"
   },
   {
-    "affects": "FS",
-    "cs": "0",
-    "hs": "1",
-    "pet": "1",
-    "sc": "0.6",
-    "slug": "fs",
-    "type": "dmg"
+    "name": "FS",
+    "reductions": {
+      "cs": 0.0,
+      "hero": 0.0,
+      "hs": 1.0,
+      "pet": 1.0,
+      "sc": 0.6,
+      "tap": 1.0
+    },
+    "slug": "fs"
   },
   {
-    "affects": "WC",
-    "cs": "1",
-    "hs": "0.5",
-    "pet": "0.5",
-    "sc": "0.6",
-    "slug": "wc",
-    "type": "dmg"
+    "name": "WC",
+    "reductions": {
+      "cs": 1.0,
+      "hero": 1.0,
+      "hs": 0.5,
+      "pet": 0.5,
+      "sc": 0.6,
+      "tap": 0.5
+    },
+    "slug": "wc"
   },
   {
-    "affects": "SC",
-    "cs": "0",
-    "hs": "0",
-    "pet": "0",
-    "sc": "1",
-    "slug": "sc",
-    "type": "dmg"
+    "name": "SC",
+    "reductions": {
+      "cs": 0.0,
+      "hero": 0.0,
+      "hs": 0.0,
+      "pet": 0.0,
+      "sc": 1.0,
+      "tap": 0.0
+    },
+    "slug": "sc"
   },
   {
-    "affects": "All",
-    "cs": "1",
-    "hs": "1",
-    "pet": "1",
-    "sc": "1",
-    "slug": "all",
-    "type": "dmg"
+    "name": "All",
+    "reductions": {
+      "cs": 1.0,
+      "hero": 1.0,
+      "hs": 1.0,
+      "pet": 1.0,
+      "sc": 1.0,
+      "tap": 1.0
+    },
+    "slug": "all"
   },
   {
-    "affects": "Crit dmg",
-    "cs": "1",
-    "hs": "1",
-    "pet": "1",
-    "sc": "1",
-    "slug": "crit-dmg",
-    "type": "dmg"
+    "name": "Crit dmg",
+    "reductions": {
+      "cs": 1.0,
+      "hero": 0.0,
+      "hs": 1.0,
+      "pet": 1.0,
+      "sc": 1.0,
+      "tap": 1.0
+    },
+    "slug": "crit-dmg"
   },
   {
-    "affects": "Crit chance",
-    "cs": "0.5",
-    "hs": "0",
-    "pet": "1",
-    "sc": "1.5",
-    "slug": "crit-chance",
-    "type": "dmg"
+    "name": "Crit chance",
+    "reductions": {
+      "cs": 0.5,
+      "hero": 0.0,
+      "hs": 0.0,
+      "pet": 1.0,
+      "sc": 1.5,
+      "tap": 1.0
+    },
+    "slug": "crit-chance"
   },
   {
-    "affects": "Tap from heroes%",
-    "cs": "0",
-    "hs": "1",
-    "pet": "1",
-    "sc": "1",
-    "slug": "tap-from-heroes",
-    "type": "dmg"
+    "name": "Stealth",
+    "reductions": {
+      "cs": 1.0,
+      "hero": 1.0,
+      "hs": 1.0,
+      "pet": 1.0,
+      "sc": 1.0,
+      "tap": 1.0
+    },
+    "slug": "stealth"
   },
   {
-    "affects": "All Prob",
-    "cs": "1",
-    "hs": "0",
-    "pet": "1.7",
-    "sc": "2.1",
-    "slug": "all-prob",
-    "type": "dmg"
+    "name": "Inactive",
+    "reductions": {
+      "cs": 0.0,
+      "hero": 0.0,
+      "hs": 0.0,
+      "pet": 0.0,
+      "sc": 0.0,
+      "tap": 0.0
+    },
+    "slug": "inactive"
+  },
+  {
+    "name": "Companion (Pet, SC, CS)",
+    "reductions": {
+      "cs": 1.0,
+      "hero": 0.0,
+      "hs": 0.0,
+      "pet": 1.0,
+      "sc": 1.0,
+      "tap": 0.0
+    },
+    "slug": "companion"
+  },
+  {
+    "name": "Knight boost (Tap, Pet, FS)",
+    "reductions": {
+      "cs": 0.0,
+      "hero": 0.0,
+      "hs": 2.0,
+      "pet": 3.0,
+      "sc": 1.2,
+      "tap": 2.0
+    },
+    "slug": "knight-boost"
+  },
+  {
+    "name": "Warlord boost (All Hero, CS, WC)",
+    "reductions": {
+      "cs": 3.0,
+      "hero": 2.0,
+      "hs": 1.0,
+      "pet": 1.0,
+      "sc": 1.2,
+      "tap": 1.0
+    },
+    "slug": "warlord-boost"
+  },
+  {
+    "name": "Sorcerer boost (SC, HS, HoM)",
+    "reductions": {
+      "cs": 0.0,
+      "hero": 0.0,
+      "hs": 1.0,
+      "pet": 0.0,
+      "sc": 1.0,
+      "tap": 0.0
+    },
+    "slug": "sorcerer-boost"
+  },
+  {
+    "name": "Rogue boost (DS, inactive dmg/gold)",
+    "reductions": {
+      "cs": 0.5,
+      "hero": 0.0,
+      "hs": 0.6,
+      "pet": 0.6,
+      "sc": 0.6,
+      "tap": 1.0
+    },
+    "slug": "rogue-boost"
+  },
+  {
+    "name": "Fundamental damage (All Hero, Tap)",
+    "reductions": {
+      "cs": 1.0,
+      "hero": 1.0,
+      "hs": 1.5,
+      "pet": 1.5,
+      "sc": 1.2,
+      "tap": 1.5
+    },
+    "slug": "fundamental-damage"
+  },
+  {
+    "name": "Pet damage bonuses",
+    "reductions": {
+      "cs": 6.0,
+      "hero": 6.0,
+      "hs": 6.0,
+      "pet": 6.0,
+      "sc": 5.6,
+      "tap": 6.0
+    },
+    "slug": "pet-damage-bonuses"
+  },
+  {
+    "name": "Artifact damage bonuses",
+    "reductions": {
+      "cs": 15.0,
+      "hero": 12.0,
+      "hs": 13.8,
+      "pet": 15.0,
+      "sc": 14.2,
+      "tap": 13.0
+    },
+    "slug": "artifact-damage-bonuses"
+  },
+  {
+    "name": "Tap from heroes%",
+    "reductions": {
+      "cs": 0.0,
+      "hero": 0.0,
+      "hs": 1.0,
+      "pet": 1.0,
+      "sc": 1.0,
+      "tap": 1.0
+    },
+    "slug": "tap-from-heroes"
   }
 ]

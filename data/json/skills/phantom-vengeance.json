@@ -69,6 +69,16 @@
   "name": "Phantom Vengeance",
   "note": "Increased clone dmg + attack rate",
   "parent_id": "MPCapacityBoost",
+  "reductions": {
+    "dmg": {
+      "cs": 0.0,
+      "hero": 0.0,
+      "hs": 0.0,
+      "pet": 0.0,
+      "sc": 1.0,
+      "tap": 0.0
+    }
+  },
   "skill_tree": "Sorcerer",
   "slug": "phantom-vengeance",
   "sp_required": [

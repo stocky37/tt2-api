@@ -69,6 +69,16 @@
   "name": "Aerial Assault",
   "note": "Increased clan ship damage / max splash count",
   "parent_id": "AllHelperDmg",
+  "reductions": {
+    "dmg": {
+      "cs": 1.0,
+      "hero": 0.0,
+      "hs": 0.0,
+      "pet": 0.0,
+      "sc": 0.0,
+      "tap": 0.0
+    }
+  },
   "skill_tree": "Warlord",
   "slug": "aerial-assault",
   "sp_required": [

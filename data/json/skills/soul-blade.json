@@ -51,6 +51,7 @@
   "name": "Soul Blade",
   "note": "Daggers splash and splash skip.",
   "parent_id": "PoisonedBlade",
+  "reductions": {},
   "skill_tree": "Rogue",
   "slug": "soul-blade",
   "sp_required": [

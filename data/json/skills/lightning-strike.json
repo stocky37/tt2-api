@@ -55,6 +55,16 @@
   "name": "Lightning Strike",
   "note": "Chance to deal damage equal to percent of monster hp",
   "parent_id": "ManaStealSkillBoost",
+  "reductions": {
+    "dmg": {
+      "cs": 1.0,
+      "hero": 1.0,
+      "hs": 1.0,
+      "pet": 1.0,
+      "sc": 1.0,
+      "tap": 1.0
+    }
+  },
   "skill_tree": "Sorcerer",
   "slug": "lightning-strike",
   "sp_required": [

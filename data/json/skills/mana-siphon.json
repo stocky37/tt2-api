@@ -42,6 +42,7 @@
   "name": "Mana Siphon",
   "note": "Chance to gain additional mana per tap",
   "parent_id": "BurstSkillBoost",
+  "reductions": {},
   "skill_tree": "Sorcerer",
   "slug": "mana-siphon",
   "sp_required": [

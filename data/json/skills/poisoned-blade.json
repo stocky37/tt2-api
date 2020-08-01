@@ -73,6 +73,16 @@
   "name": "Poisoned Blade",
   "note": "Daggers cause Titans to take more damage.",
   "parent_id": "UltraDagger",
+  "reductions": {
+    "dmg": {
+      "cs": 1.0,
+      "hero": 1.0,
+      "hs": 1.0,
+      "pet": 1.0,
+      "sc": 1.0,
+      "tap": 1.0
+    }
+  },
   "skill_tree": "Rogue",
   "slug": "poisoned-blade",
   "sp_required": [

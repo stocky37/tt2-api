@@ -69,6 +69,16 @@
   "name": "Summon Inferno",
   "note": "Increased Fire Sword damage",
   "parent_id": "PetDmg",
+  "reductions": {
+    "dmg": {
+      "cs": 0.0,
+      "hero": 0.0,
+      "hs": 1.0,
+      "pet": 1.0,
+      "sc": 0.6,
+      "tap": 1.0
+    }
+  },
   "skill_tree": "Knight",
   "slug": "summon-inferno",
   "sp_required": [

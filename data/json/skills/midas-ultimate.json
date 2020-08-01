@@ -69,6 +69,16 @@
   "name": "Midas Ultimate",
   "note": "HoM multiplier + fairy gold mult",
   "parent_id": "MPCapacityBoost",
+  "reductions": {
+    "gold": {
+      "all-boss": 1.0,
+      "chesterson": 1.0,
+      "fairy": 0.6,
+      "inactive": 0.0,
+      "phom": 0.6,
+      "splash": 1.0
+    }
+  },
   "skill_tree": "Sorcerer",
   "slug": "midas-ultimate",
   "sp_required": [

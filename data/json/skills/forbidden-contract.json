@@ -51,6 +51,16 @@
   "name": "Forbidden Contract",
   "note": "Activate QTE to drain mana for more damage.",
   "parent_id": "StrokeOfLuck",
+  "reductions": {
+    "dmg": {
+      "cs": 1.0,
+      "hero": 1.0,
+      "hs": 1.0,
+      "pet": 1.0,
+      "sc": 1.0,
+      "tap": 1.0
+    }
+  },
   "skill_tree": "Rogue",
   "slug": "forbidden-contract",
   "sp_required": [

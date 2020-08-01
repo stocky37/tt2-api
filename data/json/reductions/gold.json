@@ -1,83 +1,182 @@
 [
   {
-    "affects": "pHoM",
-    "boss": "0",
-    "chesterson": "0",
-    "fairy": "0",
-    "phom": "1",
-    "slug": "phom",
-    "type": "gold"
+    "name": "pHoM",
+    "reductions": {
+      "all-boss": 0.0,
+      "chesterson": 0.0,
+      "fairy": 0.0,
+      "inactive": 0.0,
+      "phom": 1.0,
+      "splash": 0.0
+    },
+    "slug": "phom"
   },
   {
-    "affects": "Chesterson",
-    "boss": "0",
-    "chesterson": "1",
-    "fairy": "1",
-    "phom": "0",
-    "slug": "chesterson",
-    "type": "gold"
+    "name": "Chesterson",
+    "reductions": {
+      "all-boss": 0.0,
+      "chesterson": 1.0,
+      "fairy": 1.0,
+      "inactive": 1.0,
+      "phom": 0.0,
+      "splash": 1.0
+    },
+    "slug": "chesterson"
   },
   {
-    "affects": "HoM",
-    "boss": "1",
-    "chesterson": "1",
-    "fairy": "0.6",
-    "phom": "0.6",
-    "slug": "hom",
-    "type": "gold"
+    "name": "HoM",
+    "reductions": {
+      "all-boss": 1.0,
+      "chesterson": 1.0,
+      "fairy": 0.6,
+      "inactive": 0.0,
+      "phom": 0.6,
+      "splash": 1.0
+    },
+    "slug": "hom"
   },
   {
-    "affects": "All",
-    "boss": "1",
-    "chesterson": "1",
-    "fairy": "1",
-    "phom": "1",
-    "slug": "all",
-    "type": "gold"
+    "name": "All",
+    "reductions": {
+      "all-boss": 1.0,
+      "chesterson": 1.0,
+      "fairy": 1.0,
+      "inactive": 1.0,
+      "phom": 1.0,
+      "splash": 1.0
+    },
+    "slug": "all"
   },
   {
-    "affects": "Chesterson chance",
-    "boss": "0",
-    "chesterson": "1",
-    "fairy": "1",
-    "phom": "0",
-    "slug": "chesterson-chance",
-    "type": "gold"
+    "name": "Chesterson chance",
+    "reductions": {
+      "all-boss": 0.0,
+      "chesterson": 1.0,
+      "fairy": 1.0,
+      "inactive": 1.0,
+      "phom": 0.0,
+      "splash": 1.0
+    },
+    "slug": "chesterson-chance"
   },
   {
-    "affects": "Fairy",
-    "boss": "0",
-    "chesterson": "0",
-    "fairy": "1",
-    "phom": "0",
-    "slug": "fairy",
-    "type": "gold"
+    "name": "Fairy",
+    "reductions": {
+      "all-boss": 0.0,
+      "chesterson": 0.0,
+      "fairy": 1.0,
+      "inactive": 0.0,
+      "phom": 0.0,
+      "splash": 0.0
+    },
+    "slug": "fairy"
   },
   {
-    "affects": "Boss",
-    "boss": "1",
-    "chesterson": "0",
-    "fairy": "0",
-    "phom": "1",
-    "slug": "boss",
-    "type": "gold"
+    "name": "Boss",
+    "reductions": {
+      "all-boss": 1.0,
+      "chesterson": 0.0,
+      "fairy": 0.0,
+      "inactive": 1.0,
+      "phom": 1.0,
+      "splash": 1.0
+    },
+    "slug": "boss"
   },
   {
-    "affects": "Multispawn",
-    "boss": "0",
-    "chesterson": "0",
-    "fairy": "0",
-    "phom": "0",
-    "slug": "multispawn",
-    "type": "gold"
+    "name": "Multi-Spawn",
+    "reductions": {
+      "all-boss": 0.0,
+      "chesterson": 1.0,
+      "fairy": 0.0,
+      "inactive": 1.0,
+      "phom": 0.0,
+      "splash": 0.0
+    },
+    "slug": "multi-spawn"
   },
   {
-    "affects": "All Prob",
-    "boss": "1",
-    "chesterson": "1",
-    "fairy": "0.6",
-    "phom": "0.6",
-    "slug": "all-prob",
-    "type": "gold"
+    "name": "Specialty Gold (Fairy, pHoM)",
+    "reductions": {
+      "all-boss": 0.0,
+      "chesterson": 0.0,
+      "fairy": 1.0,
+      "inactive": 0.0,
+      "phom": 1.0,
+      "splash": 0.0
+    },
+    "slug": "specialty-gold"
+  },
+  {
+    "name": "Sorcerer boost (SC, HS, HoM)",
+    "reductions": {
+      "all-boss": 1.0,
+      "chesterson": 1.0,
+      "fairy": 0.6,
+      "inactive": 0.0,
+      "phom": 0.6,
+      "splash": 1.0
+    },
+    "slug": "sorcerer-boost"
+  },
+  {
+    "name": "Rogue boost (DS, inactive dmg/gold)",
+    "reductions": {
+      "all-boss": 0.0,
+      "chesterson": 0.0,
+      "fairy": 0.0,
+      "inactive": 1.0,
+      "phom": 0.0,
+      "splash": 0.0
+    },
+    "slug": "rogue-boost"
+  },
+  {
+    "name": "Pet gold bonuses (2x All Gold)",
+    "reductions": {
+      "all-boss": 2.0,
+      "chesterson": 2.0,
+      "fairy": 2.0,
+      "inactive": 2.0,
+      "phom": 2.0,
+      "splash": 2.0
+    },
+    "slug": "pet-gold-bonuses"
+  },
+  {
+    "name": "Artifact gold bonuses",
+    "reductions": {
+      "all-boss": 8.0,
+      "chesterson": 8.0,
+      "fairy": 9.0,
+      "inactive": 6.0,
+      "phom": 9.0,
+      "splash": 7.0
+    },
+    "slug": "artifact-gold-bonuses"
+  },
+  {
+    "name": "Stealth",
+    "reductions": {
+      "all-boss": 1.0,
+      "chesterson": 1.0,
+      "fairy": 1.0,
+      "inactive": 2.0,
+      "phom": 1.0,
+      "splash": 1.0
+    },
+    "slug": "stealth"
+  },
+  {
+    "name": "Inactive",
+    "reductions": {
+      "all-boss": 0.0,
+      "chesterson": 0.0,
+      "fairy": 0.0,
+      "inactive": 1.0,
+      "phom": 0.0,
+      "splash": 0.0
+    },
+    "slug": "inactive"
   }
 ]

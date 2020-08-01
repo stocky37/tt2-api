@@ -69,6 +69,16 @@
   "name": "Heart of Midas",
   "note": "Give multiple of monster gold drop QTE",
   "parent_id": "TapDmg",
+  "reductions": {
+    "gold": {
+      "all-boss": 1.0,
+      "chesterson": 0.0,
+      "fairy": 0.0,
+      "inactive": 1.0,
+      "phom": 1.0,
+      "splash": 1.0
+    }
+  },
   "skill_tree": "Knight",
   "slug": "heart-of-midas",
   "sp_required": [
