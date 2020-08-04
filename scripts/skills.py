@@ -67,7 +67,8 @@ dmg_reductions_map = [
         "poisoned-blade": lambda r: get_reductions(r, "all"),
         "forbidden-contract": lambda r: get_reductions(r, "all"),
         "guided-blade": lambda r: sum_reductions(r, ["companion", "ds"]),
-    }
+    },
+    {"cleaving-strike": lambda r: get_reductions(r, "crit-chance"),},
 ]
 
 gold_reductions_map = [
@@ -80,7 +81,8 @@ gold_reductions_map = [
         "dimensional-shift": lambda r: get_reductions(r, "hom"),
         "master-thief": lambda r: get_reductions(r, "all"),
         "ambush": lambda r: get_reductions(r, "chesterson"),
-    }
+    },
+    {"heart-of-midas": lambda r: get_reductions(r, "phom"),},
 ]
 
 dmg_reductions = load_reductions("data/raw/reductions-dmg.tsv")

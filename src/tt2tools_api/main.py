@@ -25,26 +25,19 @@ def load(filename):
     return heroes
 
 
+def show_skill(skill_tree: SkillTree, skill_id: str, level: int, build: BuildStats):
+    skill = skill_tree.get_skill(skill_id)
+    skill.level = level
+    print("{} -> {}".format(skill, skill.efficiency(build)))
+
+
 def main():
-    hero = "the-great-pharaoh"
-    hero_ascenscion = 3
-
-    skills = load_skills("data/json/skills")
     heroes = load("data/json/heroes.json")
-    skill_tree = SkillTree(skills)
-    kv = skill_tree.get_skill("TapDmg")
-    kv.level = 3
-
-    gold_ratio = heroes[hero]["gold_ratio"][hero_ascenscion]
-
     build = BuildStats(heroes, "sc", "phom", "maya-muerta-the-watcher", 3)
+    skill_tree = SkillTree(load_skills("data/json/skills"))
 
-    # print(skills)
-    # print(skill_tree)
-    print(skill_tree.skills)
-    print(kv)
-    print(kv.efficiency(build))
-    print(gold_ratio)
+    show_skill(skill_tree, "TapDmg", 3, build)
+    show_skill(skill_tree, "PetGoldQTE", 16, build)
 
 
 if __name__ == "__main__":

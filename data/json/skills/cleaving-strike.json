@@ -42,6 +42,16 @@
       ]
     },
     {
+      "reductions": {
+        "dmg": {
+          "cs": 0.5,
+          "hero": 0.0,
+          "hs": 0.0,
+          "pet": 1.0,
+          "sc": 1.5,
+          "tap": 1.0
+        }
+      },
       "type": "CritChance",
       "value": [
         0.0,

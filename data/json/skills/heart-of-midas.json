@@ -42,6 +42,16 @@
       ]
     },
     {
+      "reductions": {
+        "gold": {
+          "all-boss": 0.0,
+          "chesterson": 0.0,
+          "fairy": 0.0,
+          "inactive": 0.0,
+          "phom": 1.0,
+          "splash": 0.0
+        }
+      },
       "type": "PetGoldQTECooldown",
       "value": [
         0.0,

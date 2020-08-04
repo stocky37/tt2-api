@@ -20,8 +20,11 @@ class LevelledSkill(NodeMixin):
     def __init__(self, skill: Skill, level: int):
         if not 0 <= level <= skill.max_level:
             raise ValueError
-        self.level = level
-        self.skill = skill
+        self.level: int = level
+        self.skill: skill = skill
+        self.efficiency_calc_table: Dict = {
+            "PetGoldQTECooldown": self.hom_cooldown_efficiency_calc
+        }
 
     @property
     def id(self) -> str:
@@ -112,14 +115,25 @@ class LevelledSkill(NodeMixin):
         else:
             raise AttributeError
 
-    # =IF(AH6>=25,1,IF(CritChanceCalc+F6*AllProbTotal<=0,1,((0.15+C6)/IF(B6=0,1+0.15,B6+0.15))^(Y6/H6)*((CritChanceCalc+F6*AllProbTotal)/(CritChanceCalc+E6*AllProbTotal))^(Z6/H6)))
+    def std_efficiency_calc(
+        self, build: BuildStats, value: float, next_value: float, reduction: float
+    ):
+        return (next_value / value) ** (reduction / self.next.sp_cost)
+
+    def hom_cooldown_efficiency_calc(
+        self, build: BuildStats, value: float, next_value: float, reduction: float
+    ):
+        return ((75 - value) / (75 - next_value)) ** (reduction / self.next.sp_cost)
 
     # calculates efficiency of an individual bonus
     def calc_efficiency(self, effect: Dict, idx: int, build: BuildStats):
+        calc_func = self.efficiency_calc_table.get(
+            effect["type"], self.std_efficiency_calc
+        )
         value = max(effect["value"], 1)  # minimum of 1 to handle level 0
         next_value = self.next.bonuses[idx]["value"]
         reduction = calc_reduction(effect, build)
-        return (next_value / value) ** (reduction / self.next.sp_cost)
+        return calc_func(build, value, next_value, reduction)
 
     def efficiencies(self, build: BuildStats):
         efficiencies = []
@@ -131,10 +145,7 @@ class LevelledSkill(NodeMixin):
         if self.level == self.max_level:
             return 1
 
-        if self.slug == "knight-s-valor":
-            return reduce(operator.mul, self.efficiencies(build))
-        else:
-            return 0
+        return reduce(operator.mul, self.efficiencies(build))
 
     def __repr__(self):
         return 'LevelledSkill("{}", {})'.format(self.name, self.level)
