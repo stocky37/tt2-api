@@ -17,6 +17,7 @@ fastapi = "^0.60.1"
 python-slugify = "^4.0.1"
 inflection = "^0.5.0"
 anytree = "^2.8.0"
+pydash = "^4.8.0"
 
 [tool.poetry.dev-dependencies]
 black = "^19.10b0"

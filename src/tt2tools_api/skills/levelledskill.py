@@ -1,8 +1,19 @@
-from functools import cached_property
+import operator
+from functools import cached_property, reduce
+from typing import Dict
 
 from anytree import NodeMixin
+from pydash import get
 
-from .skill import Skill
+from tt2tools_api.build_stats import BuildStats
+from tt2tools_api.skills import Skill
+
+
+# calculate the reduction value for a given skill effect
+def calc_reduction(effect: Dict, build: BuildStats):
+    dmg_reduction = get(effect, ["reductions", "dmg", build.dmg_source], 0)
+    gold_reduction = get(effect, ["reductions", "gold", build.gold_source], 0)
+    return dmg_reduction + gold_reduction * build.gold_ratio
 
 
 class LevelledSkill(NodeMixin):
@@ -52,7 +63,7 @@ class LevelledSkill(NodeMixin):
     def bonuses(self):
         return [
             {
-                "type": bonus["type"],
+                **bonus,
                 "value": bonus["value"][self.level]
                 if isinstance(bonus["value"], list)
                 else bonus["value"],
@@ -101,22 +112,27 @@ class LevelledSkill(NodeMixin):
         else:
             raise AttributeError
 
-    def reduction(self, build):
-        return self.skill.reductions["dmg"][build]
+    # =IF(AH6>=25,1,IF(CritChanceCalc+F6*AllProbTotal<=0,1,((0.15+C6)/IF(B6=0,1+0.15,B6+0.15))^(Y6/H6)*((CritChanceCalc+F6*AllProbTotal)/(CritChanceCalc+E6*AllProbTotal))^(Z6/H6)))
 
-    def efficiency(self, build, gold_ratio):
+    # calculates efficiency of an individual bonus
+    def calc_efficiency(self, effect: Dict, idx: int, build: BuildStats):
+        value = max(effect["value"], 1)  # minimum of 1 to handle level 0
+        next_value = self.next.bonuses[idx]["value"]
+        reduction = calc_reduction(effect, build)
+        return (next_value / value) ** (reduction / self.next.sp_cost)
+
+    def efficiencies(self, build: BuildStats):
+        efficiencies = []
+        for idx, effect in enumerate(self.bonuses):
+            efficiencies.append(self.calc_efficiency(effect, idx, build))
+        return efficiencies
+
+    def efficiency(self, build: BuildStats):
         if self.level == self.max_level:
             return 1
 
-        primary_effect = max(self.primary_effect["value"], 1)
-
-        print("primaryEffect: {}".format(primary_effect))
-        print("nextPrimaryEffect: {}".format(self.next.primary_effect["value"]))
-
         if self.slug == "knight-s-valor":
-            return (self.next.primary_effect["value"] / primary_effect) ** (
-                self.reduction(build) / self.next.sp_cost
-            )
+            return reduce(operator.mul, self.efficiencies(build))
         else:
             return 0
 

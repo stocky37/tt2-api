@@ -12,7 +12,6 @@ class Skill:
         bonuses,
         max_level,
         skill_tree,
-        reductions,
         parent_id=None,
         **kwargs
     ):
@@ -28,7 +27,6 @@ class Skill:
         self.max_level = max_level
         self.skill_tree = skill_tree
         self.parent_id = parent_id
-        self.reductions = reductions
 
     def __repr__(self):
         return "Skill({})".format(self.name)

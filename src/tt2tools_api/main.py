@@ -3,6 +3,7 @@
 import json
 from os import scandir
 
+from tt2tools_api.build_stats import BuildStats
 from .skills import Skill, SkillTree
 
 
@@ -36,11 +37,13 @@ def main():
 
     gold_ratio = heroes[hero]["gold_ratio"][hero_ascenscion]
 
-    print(skills)
-    print(skill_tree)
+    build = BuildStats(heroes, "sc", "phom", "maya-muerta-the-watcher", 3)
+
+    # print(skills)
+    # print(skill_tree)
     print(skill_tree.skills)
     print(kv)
-    print(kv.efficiency("sc", gold_ratio))
+    print(kv.efficiency(build))
     print(gold_ratio)
 
 
