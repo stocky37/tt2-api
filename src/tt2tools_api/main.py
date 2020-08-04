@@ -38,6 +38,7 @@ def main():
 
     show_skill(skill_tree, "TapDmg", 3, build)
     show_skill(skill_tree, "PetGoldQTE", 16, build)
+    show_skill(skill_tree, "TapDmgFromHelpers", 14, build)
 
 
 if __name__ == "__main__":

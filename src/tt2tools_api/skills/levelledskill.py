@@ -10,7 +10,7 @@ from tt2tools_api.skills import Skill
 
 
 # calculate the reduction value for a given skill effect
-def calc_reduction(effect: Dict, build: BuildStats):
+def calc_reduction(effect: Dict, build: BuildStats) -> float:
     dmg_reduction = get(effect, ["reductions", "dmg", build.dmg_source], 0)
     gold_reduction = get(effect, ["reductions", "gold", build.gold_source], 0)
     return dmg_reduction + gold_reduction * build.gold_ratio
@@ -23,7 +23,8 @@ class LevelledSkill(NodeMixin):
         self.level: int = level
         self.skill: skill = skill
         self.efficiency_calc_table: Dict = {
-            "PetGoldQTECooldown": self.hom_cooldown_efficiency_calc
+            "PetGoldQTECooldown": self.hom_cooldown_efficiency_calc,
+            "TapDamageFromHelpers": self.tap_from_helpers_efficiency_calc,
         }
 
     @property
@@ -115,22 +116,31 @@ class LevelledSkill(NodeMixin):
         else:
             raise AttributeError
 
-    def std_efficiency_calc(
-        self, build: BuildStats, value: float, next_value: float, reduction: float
-    ):
+    def std_efficiency_calc(self, _, value: float, next_value: float, reduction: float):
         return (next_value / value) ** (reduction / self.next.sp_cost)
 
     def hom_cooldown_efficiency_calc(
-        self, build: BuildStats, value: float, next_value: float, reduction: float
+        self, _, value: float, next_value: float, reduction: float
     ):
         return ((75 - value) / (75 - next_value)) ** (reduction / self.next.sp_cost)
+
+    def tap_from_helpers_efficiency_calc(
+        self, build: BuildStats, value: float, next_value: float, reduction: float
+    ):
+        if build.tap_from_heroes == 0 or self.level == 0:
+            return 1.5 ** reduction
+        return (
+            (build.tap_from_heroes + next_value) / (build.tap_from_heroes + value)
+        ) ** (reduction / self.next.sp_cost)
 
     # calculates efficiency of an individual bonus
     def calc_efficiency(self, effect: Dict, idx: int, build: BuildStats):
         calc_func = self.efficiency_calc_table.get(
             effect["type"], self.std_efficiency_calc
         )
-        value = max(effect["value"], 1)  # minimum of 1 to handle level 0
+
+        # minimum of 1 to handle level 0
+        value = max(effect["value"], 1)
         next_value = self.next.bonuses[idx]["value"]
         reduction = calc_reduction(effect, build)
         return calc_func(build, value, next_value, reduction)
