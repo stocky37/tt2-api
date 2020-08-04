@@ -1,6 +1,3 @@
-from anytree import NodeMixin
-
-
 class Skill:
     def __init__(
         self,
@@ -15,9 +12,11 @@ class Skill:
         bonuses,
         max_level,
         skill_tree,
+        reductions,
         parent_id=None,
         **kwargs
     ):
+        self.__dict__.update(kwargs)
         self.id = id
         self.name = name
         self.slug = slug
@@ -29,6 +28,7 @@ class Skill:
         self.max_level = max_level
         self.skill_tree = skill_tree
         self.parent_id = parent_id
+        self.reductions = reductions
 
     def __repr__(self):
         return "Skill({})".format(self.name)

@@ -18,11 +18,14 @@ def load_skills(path):
 def main():
     skills = load_skills("data/json/skills")
     skill_tree = SkillTree(skills)
+    kv = skill_tree.get_skill("TapDmg")
+    kv.level = 3
 
     print(skills)
     print(skill_tree)
     print(skill_tree.skills)
-    print(skill_tree.get_skill("Cloaking"))
+    print(kv)
+    print(kv.efficiency("sc"))
 
 
 if __name__ == "__main__":

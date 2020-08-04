@@ -1,3 +1,5 @@
+from functools import cached_property
+
 from anytree import NodeMixin
 
 from .skill import Skill
@@ -38,15 +40,15 @@ class LevelledSkill(NodeMixin):
     def max_level(self):
         return self.skill.max_level
 
-    @property
-    def sp_required(self) -> int:
+    @cached_property
+    def sp_cost(self) -> int:
         return self.skill.sp_required[self.level]
 
-    @property
+    @cached_property
     def sp_used(self) -> int:
         return sum(self.skill.sp_required[: self.level + 1])
 
-    @property
+    @cached_property
     def bonuses(self):
         return [
             {
@@ -58,11 +60,32 @@ class LevelledSkill(NodeMixin):
             for bonus in self.skill.bonuses
         ]
 
-    @property
+    @cached_property
+    def primary_effect(self):
+        try:
+            return self.bonuses[0]
+        except IndexError:
+            return None
+
+    @cached_property
+    def secondary_effect(self):
+        try:
+            return self.bonuses[1]
+        except IndexError:
+            return None
+
+    @cached_property
+    def tertiary_effect(self):
+        try:
+            return self.bonuses[1]
+        except IndexError:
+            return None
+
+    @cached_property
     def next(self):
         return LevelledSkill(self.skill, self.level + 1)
 
-    @property
+    @cached_property
     def prev(self):
         return LevelledSkill(self.skill, self.level - 1)
 
@@ -78,5 +101,27 @@ class LevelledSkill(NodeMixin):
         else:
             raise AttributeError
 
+    def reduction(self, build):
+        return self.skill.reductions["dmg"][build]
+
+    def efficiency(self, build):
+        if self.level == self.max_level:
+            return 1
+
+        primary_effect = max(self.primary_effect["value"], 1)
+
+        print("primaryEffect: {}".format(primary_effect))
+        print("nextPrimaryEffect: {}".format(self.next.primary_effect["value"]))
+
+        if self.slug == "knight-s-valor":
+            return (self.next.primary_effect["value"] / primary_effect) ** (
+                self.reduction(build) / self.next.sp_cost
+            )
+        else:
+            return 0
+
     def __repr__(self):
         return 'LevelledSkill("{}", {})'.format(self.name, self.level)
+
+
+# (PrevLvlPrimaryEffect / max(PrimaryEffect, 1)) ^ (PrimaryReductionValue/SpCost)
