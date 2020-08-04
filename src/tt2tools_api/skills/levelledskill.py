@@ -104,7 +104,7 @@ class LevelledSkill(NodeMixin):
     def reduction(self, build):
         return self.skill.reductions["dmg"][build]
 
-    def efficiency(self, build):
+    def efficiency(self, build, gold_ratio):
         if self.level == self.max_level:
             return 1
 
