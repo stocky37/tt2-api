@@ -1,6 +1,16 @@
 {
   "bonuses": [
     {
+      "reductions": {
+        "dmg": {
+          "cs": 1.0,
+          "hero": 1.0,
+          "hs": 0.5,
+          "pet": 0.5,
+          "sc": 0.6,
+          "tap": 0.5
+        }
+      },
       "type": "HelperQTEDamage",
       "value": [
         0.0,
@@ -33,16 +43,6 @@
   "name": "Astral Awakening",
   "note": "Increased Hero QTE damage per bounce",
   "parent_id": "HelperBoost",
-  "reductions": {
-    "dmg": {
-      "cs": 1.0,
-      "hero": 1.0,
-      "hs": 0.5,
-      "pet": 0.5,
-      "sc": 0.6,
-      "tap": 0.5
-    }
-  },
   "skill_tree": "Warlord",
   "slug": "astral-awakening",
   "sp_required": [

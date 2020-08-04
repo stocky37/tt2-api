@@ -68,7 +68,6 @@
   "max_level": 25,
   "name": "Limit Break",
   "note": "Increased mana capacity and regen",
-  "reductions": {},
   "skill_tree": "Sorcerer",
   "slug": "limit-break",
   "sp_required": [

@@ -1,6 +1,16 @@
 {
   "bonuses": [
     {
+      "reductions": {
+        "gold": {
+          "all-boss": 0.0,
+          "chesterson": 1.0,
+          "fairy": 1.0,
+          "inactive": 1.0,
+          "phom": 0.0,
+          "splash": 1.0
+        }
+      },
       "type": "MultiMonstersMaxCount",
       "value": [
         0.0,
@@ -39,16 +49,6 @@
   "name": "Ambush",
   "note": "Increased multi spawn chance",
   "parent_id": "OfflineGold",
-  "reductions": {
-    "gold": {
-      "all-boss": 0.0,
-      "chesterson": 1.0,
-      "fairy": 1.0,
-      "inactive": 1.0,
-      "phom": 0.0,
-      "splash": 1.0
-    }
-  },
   "skill_tree": "Rogue",
   "slug": "ambush",
   "sp_required": [

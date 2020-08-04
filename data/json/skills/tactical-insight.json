@@ -1,6 +1,24 @@
 {
   "bonuses": [
     {
+      "reductions": {
+        "dmg": {
+          "cs": 108.0,
+          "hero": 86.0,
+          "hs": 111.5,
+          "pet": 111.5,
+          "sc": 109.2,
+          "tap": 111.5
+        },
+        "gold": {
+          "all-boss": 56.0,
+          "chesterson": 65.0,
+          "fairy": 83.0,
+          "inactive": 90.0,
+          "phom": 56.0,
+          "splash": 90.0
+        }
+      },
       "type": "HelperMultiplicativeSkillBoost",
       "value": [
         0.0,
@@ -69,24 +87,6 @@
   "name": "Tactical Insight",
   "note": "Unlockable skill boost for heroes",
   "parent_id": "ChestGold",
-  "reductions": {
-    "dmg": {
-      "cs": 108.0,
-      "hero": 86.0,
-      "hs": 111.5,
-      "pet": 111.5,
-      "sc": 109.2,
-      "tap": 111.5
-    },
-    "gold": {
-      "all-boss": 56.0,
-      "chesterson": 65.0,
-      "fairy": 83.0,
-      "inactive": 90.0,
-      "phom": 56.0,
-      "splash": 90.0
-    }
-  },
   "skill_tree": "Warlord",
   "slug": "tactical-insight",
   "sp_required": [

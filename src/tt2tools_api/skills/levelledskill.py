@@ -77,7 +77,7 @@ class LevelledSkill(NodeMixin):
     @cached_property
     def tertiary_effect(self):
         try:
-            return self.bonuses[1]
+            return self.bonuses[2]
         except IndexError:
             return None
 

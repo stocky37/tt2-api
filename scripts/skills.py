@@ -38,44 +38,53 @@ data_map = {
     "TierNum": {"key": "tier", "val": lambda val: int(val)},
 }
 
-dmg_reductions_map = {
-    "knight-s-valor": lambda r: get_reductions(r, "tap"),
-    "chivalric-order": lambda r: get_reductions(r, "tap-from-heroes"),
-    "pet-evolution": lambda r: get_reductions(r, "pet"),
-    "cleaving-strike": lambda r: get_reductions(r, "crit-dmg"),
-    "summon-inferno": lambda r: get_reductions(r, "fs"),
-    "lightning-burst": lambda r: get_reductions(r, "pet"),
-    "barbaric-fury": lambda r: get_reductions(r, "tap"),
-    "flash-zip": lambda r: get_reductions(r, "pet"),
-    "master-commander": lambda r: get_reductions(r, "hero"),
-    "heroic-might": lambda r: get_reductions(r, "hero"),
-    "aerial-assault": lambda r: get_reductions(r, "cs"),
-    "tactical-insight": lambda r: ti_dmg_reductions(r),
-    "inspired-shot": lambda r: get_reductions(r, "hero"),
-    "coordinated-offensive": lambda r: get_reductions(r, "hero"),
-    "astral-awakening": lambda r: get_reductions(r, "hero"),
-    "anchoring-shot": lambda r: get_reductions(r, "all"),
-    "angelic-radiance": lambda r: get_reductions(r, "hs"),
-    "phantom-vengeance": lambda r: get_reductions(r, "sc"),
-    "lightning-strike": lambda r: get_reductions(r, "all"),
-    "dimensional-shift": lambda r: sum_reductions(r, ["hs", "ds", "fs", "wc", "sc"]),
-    "assassinate": lambda r: get_reductions(r, "ds"),
-    "stroke-of-luck": lambda r: get_reductions(r, "companion"),
-    "poisoned-blade": lambda r: get_reductions(r, "all"),
-    "forbidden-contract": lambda r: get_reductions(r, "all"),
-    "guided-blade": lambda r: sum_reductions(r, ["companion", "ds"]),
-}
+dmg_reductions_map = [
+    {
+        "knight-s-valor": lambda r: get_reductions(r, "tap"),
+        "chivalric-order": lambda r: get_reductions(r, "tap-from-heroes"),
+        "pet-evolution": lambda r: get_reductions(r, "pet"),
+        "cleaving-strike": lambda r: get_reductions(r, "crit-dmg"),
+        "summon-inferno": lambda r: get_reductions(r, "fs"),
+        "lightning-burst": lambda r: get_reductions(r, "pet"),
+        "barbaric-fury": lambda r: get_reductions(r, "tap"),
+        "flash-zip": lambda r: get_reductions(r, "pet"),
+        "master-commander": lambda r: get_reductions(r, "hero"),
+        "heroic-might": lambda r: get_reductions(r, "hero"),
+        "aerial-assault": lambda r: get_reductions(r, "cs"),
+        "tactical-insight": lambda r: ti_dmg_reductions(r),
+        "inspired-shot": lambda r: get_reductions(r, "hero"),
+        "coordinated-offensive": lambda r: get_reductions(r, "hero"),
+        "astral-awakening": lambda r: get_reductions(r, "hero"),
+        "anchoring-shot": lambda r: get_reductions(r, "all"),
+        "angelic-radiance": lambda r: get_reductions(r, "hs"),
+        "phantom-vengeance": lambda r: get_reductions(r, "sc"),
+        "lightning-strike": lambda r: get_reductions(r, "all"),
+        "dimensional-shift": lambda r: sum_reductions(
+            r, ["hs", "ds", "fs", "wc", "sc"]
+        ),
+        "assassinate": lambda r: get_reductions(r, "ds"),
+        "stroke-of-luck": lambda r: get_reductions(r, "companion"),
+        "poisoned-blade": lambda r: get_reductions(r, "all"),
+        "forbidden-contract": lambda r: get_reductions(r, "all"),
+        "guided-blade": lambda r: sum_reductions(r, ["companion", "ds"]),
+    }
+]
 
-gold_reductions_map = {
-    "heart-of-midas": lambda r: get_reductions(r, "boss"),
-    "spoils-of-war": lambda r: get_reductions(r, "chesterson"),
-    "tactical-insight": lambda r: ti_gold_reductions(r),
-    "midas-ultimate": lambda r: get_reductions(r, "hom"),
-    "fairy-charm": lambda r: get_reductions(r, "fairy"),
-    "dimensional-shift": lambda r: get_reductions(r, "hom"),
-    "master-thief": lambda r: get_reductions(r, "all"),
-    "ambush": lambda r: get_reductions(r, "chesterson"),
-}
+gold_reductions_map = [
+    {
+        "heart-of-midas": lambda r: get_reductions(r, "boss"),
+        "spoils-of-war": lambda r: get_reductions(r, "chesterson"),
+        "tactical-insight": lambda r: ti_gold_reductions(r),
+        "midas-ultimate": lambda r: get_reductions(r, "hom"),
+        "fairy-charm": lambda r: get_reductions(r, "fairy"),
+        "dimensional-shift": lambda r: get_reductions(r, "hom"),
+        "master-thief": lambda r: get_reductions(r, "all"),
+        "ambush": lambda r: get_reductions(r, "chesterson"),
+    }
+]
+
+dmg_reductions = load_reductions("data/raw/reductions-dmg.tsv")
+gold_reductions = load_reductions("data/raw/reductions-gold.tsv")
 
 
 def get_skill_levels(skill: Dict):
@@ -98,10 +107,50 @@ def get_skill_levels(skill: Dict):
     return sp_required, primary_bonus, secondary_bonus
 
 
-def transform_skills(all_skills_data: List[Dict]):
-    dmg_reductions = load_reductions("data/raw/reductions-dmg.tsv")
-    gold_reductions = load_reductions("data/raw/reductions-gold.tsv")
+def calc_reductions(slug, idx):
+    try:
+        reductions = {}
+        if slug in dmg_reductions_map[idx]:
+            reductions["dmg"] = dmg_reductions_map[idx][slug](dmg_reductions)
+        if slug in gold_reductions_map[idx]:
+            reductions["gold"] = gold_reductions_map[idx][slug](gold_reductions)
+        return reductions if reductions else None
+    except IndexError:
+        return None
 
+
+def get_bonuses(slug, skill_data, primary_values, secondary_values):
+    bonuses = []
+    primary_bonus = {
+        "type": skill_data["BonusTypeA"],
+        "value": primary_values,
+    }
+
+    reductions = calc_reductions(slug, 0)
+    if reductions:
+        primary_bonus["reductions"] = reductions
+    bonuses.append(primary_bonus)
+
+    if skill_data["BonusTypeB"] != "None":
+        secondary_bonus = {"type": skill_data["BonusTypeB"], "value": secondary_values}
+        reductions = calc_reductions(slug, 1)
+        if reductions:
+            secondary_bonus["reductions"] = reductions
+        bonuses.append(secondary_bonus)
+
+    if skill_data["BonusTypeC"] != "None":
+        tertiary_bonus = {
+            "type": skill_data["BonusTypeC"],
+            "value": num(skill_data["BonusAmountC"]),
+        }
+        reductions = calc_reductions(slug, 2)
+        if reductions:
+            tertiary_bonus["reductions"] = reductions
+        bonuses.append(tertiary_bonus)
+    return bonuses
+
+
+def transform_skills(all_skills_data: List[Dict]):
     skills = []
     for skill_data in all_skills_data:
         skill = {}
@@ -119,27 +168,6 @@ def transform_skills(all_skills_data: List[Dict]):
 
         sp, primary, secondary = get_skill_levels(skill_data)
         skill["sp_required"] = sp
-        skill["bonuses"] = [{"type": skill_data["BonusTypeA"], "value": primary}]
-
-        if skill_data["BonusTypeB"] != "None":
-            skill["bonuses"].append(
-                {"type": skill_data["BonusTypeB"], "value": secondary}
-            )
-
-        if skill_data["BonusTypeC"] != "None":
-            skill["bonuses"].append(
-                {
-                    "type": skill_data["BonusTypeC"],
-                    "value": num(skill_data["BonusAmountC"]),
-                }
-            )
-
-        skill["reductions"] = {}
-        if slug in dmg_reductions_map:
-            skill["reductions"]["dmg"] = dmg_reductions_map[slug](dmg_reductions)
-        if slug in gold_reductions_map:
-            skill["reductions"]["gold"] = gold_reductions_map[slug](gold_reductions)
-
+        skill["bonuses"] = get_bonuses(slug, skill_data, primary, secondary)
         skills.append(skill)
-
     return skills

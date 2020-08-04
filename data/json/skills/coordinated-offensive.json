@@ -1,6 +1,16 @@
 {
   "bonuses": [
     {
+      "reductions": {
+        "dmg": {
+          "cs": 1.0,
+          "hero": 1.0,
+          "hs": 0.5,
+          "pet": 0.5,
+          "sc": 0.6,
+          "tap": 0.5
+        }
+      },
       "type": "ActiveAllHelperDamage",
       "value": [
         0.0,
@@ -73,16 +83,6 @@
   "name": "Coordinated Offensive",
   "note": "Summon clan member Clan Ship QTE",
   "parent_id": "ClanShipDmg",
-  "reductions": {
-    "dmg": {
-      "cs": 1.0,
-      "hero": 1.0,
-      "hs": 0.5,
-      "pet": 0.5,
-      "sc": 0.6,
-      "tap": 0.5
-    }
-  },
   "skill_tree": "Warlord",
   "slug": "coordinated-offensive",
   "sp_required": [

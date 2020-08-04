@@ -42,7 +42,6 @@
   "name": "Ultra Dagger",
   "note": "Dagger QTE to deal damage",
   "parent_id": "OfflineGold",
-  "reductions": {},
   "skill_tree": "Rogue",
   "slug": "ultra-dagger",
   "sp_required": [

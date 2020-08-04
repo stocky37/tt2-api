@@ -69,7 +69,6 @@
   "name": "Eternal Darkness",
   "note": "Increased clone duration + splash skip",
   "parent_id": "CloneDmg",
-  "reductions": {},
   "skill_tree": "Sorcerer",
   "slug": "eternal-darkness",
   "sp_required": [
